@@ -1,0 +1,25 @@
+Chrome您的连接不是私密连接，解决办法
+
+ solution1 
+ 在当前页面用键盘输入 thisisunsafe ;不是在地址栏输入;就直接敲键盘就行了,因为Chrome不信任这些自签名ssl证书;为了安全起见;
+ 直接禁止访问;thisisunsafe 这个命令;说明你已经了解并确认这是个不安全的网站;你仍要访问就给你访问了。
+ 
+ solution2 
+ 在Chrome的地址栏中输入;chrome://flags/#show-cert-link ;选择”启用”;重启Chrome浏览器。
+ 打开问题网页,点击地址栏左侧的”不安全”图标,选择”证书”下面的”无效”链接,打开查看问题证书。
+ 如果对该网站足够信任,可以不用理会证书的问题,直接点击下面的”高级”链接,点击”继续前往…(不安全)”链接就可以忽略证书问题”进入到证书有问题的网站。
+ 
+ solution3 
+ 打开chrome://flags
+ 找到“Show in-form warnings for sensitive fields when the top-level page is not HTTPS”设置为 disabled
+ 找到 “Allow invalid certificates for resources loaded from localhost”设置为 “enabled”
+ 点启用;然后重启浏览器
+
+
+
+
+
+
+
+
+
